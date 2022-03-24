@@ -1,0 +1,25 @@
+{
+  "abi": [
+    {
+      "stateMutability": "pure",
+      "type": "function",
+      "name": "apiVersion",
+      "inputs": [],
+      "outputs": [{ "name": "", "type": "string" }]
+    },
+    {
+      "stateMutability": "nonpayable",
+      "type": "constructor",
+      "inputs": [],
+      "outputs": [],
+      "name": "constructor"
+    },
+    {
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "name": "transactNFT",
+      "inputs": [{ "name": "_buy_orders", "type": "(address,uint256)[3]" }],
+      "outputs": []
+    }
+  ]
+}
