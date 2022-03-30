@@ -21,18 +21,26 @@
         { "name": "_platform_signature", "type": "bytes" },
         { "name": "_buyer_address", "type": "address" },
         {
+          "name": "erc721_addresses",
           "components": [
-            { "name": "addr", "type": "address" },
-            { "name": "erc20_address", "type": "address" },
             {
-              "name": "erc721_addresses",
-              "type": "(address,uint256,uint256)[3]"
+              "internalType": "address",
+              "name": "nft_address",
+              "type": "address"
             },
-            { "name": "collection_start_time", "type": "uint256" },
-            { "name": "collection_end_time", "type": "uint256" }
+            {
+              "internalType": "uint256",
+              "name": "price",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "weight",
+              "type": "uint256"
+            }
           ],
-          "name": "_seller_info",
-          "type": "tuple"
+          "type": "tuple[3]",
+          "internalType": "struct Tiers[3]"
         },
         { "name": "_seller_signature", "type": "bytes" },
         { "name": "_buy_orders", "type": "(address,uint256)[3]" },
